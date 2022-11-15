@@ -382,20 +382,21 @@
         </div>
      
            
-            <label class="subscribe-label"  for="user-email">
-                <span class="subscribe-group">Підпишіться на розсилку </span>
+            <form class="subscribe-label"  for="user-email">
+                <p class="subscribe-group">Підпишіться на розсилку </p>
+                <div class="subscripe-wrapper">
                 <input type="email" name="user-mail" id="user-email" class="input-subscribe" placeholder="E-mail" required>
-                <span class="subscribe-button-wrap">
-                <button class="subscribe-button" type="submit">Підписатися</button>
-                <svg class="subscribe-svg">
-                    <use href="./images/icons.svg#icon-send" width="24" height="24"></use>
-                </svg>
-               </span>
-            </label>
+                 <button class="subscribe-button" type="submit">Підписатися
+                     <svg class="subscribe-svg" width="24" height="24">
+                         <use href="./images/icons.svg#icon-send" ></use>
+                     </svg>
+                 </button>
+                </div>
+            </form>
 
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>
         <div class="modal">
             <button data-modal-close class="button-close">
                 <svg class="close-button" width="11" height="11">
@@ -438,21 +439,24 @@
 
 
                    <label for="check" class="input-wrap check">
+                    <input type="checkbox" value="true" name="check" id="check" class="input-check visually-hidden">
+
+                    <svg class="modal-check " width="16" height="15">
+                         <use class="unchecked" href="./images/icons.svg#icon-user-box"></use>
+                        <use class="checked" href="./images/icons.svg#icon-user-fill"></use>
                        
-                       <span class="input-group">
-                           <input type="checkbox" value="true" name="check" id="check" class="input-check visually-hidden">
-                        
-                           <svg class="modal-check checked" width="16" height="15">
-                               <use href="./images/icons.svg#icon-user-fill"></use>
-                           </svg>
-                             <svg class="modal-check unchecked" width="16" height="15">
-                                 <use href="./images/icons.svg#icon-user-box"></use>
-                             </svg>
+                    </svg>
+                       
+                      
+                           
+                             <!-- <svg class="modal-check unchecked" width="16" height="15">
+                                
+                             </svg> -->
                                 <span class="text-check">Погоджуюся з розсилкою та приймаю
                                     <a class="link-check" href="">Умови договору</a>
                                 </span>
                           
-                       </span>
+                       
                    </label>
                   
                    <button type="submit" class="button">Відправити</button>
